@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- le titre -->
+
+    <title>Cours HTML</title>
+
+    <!-- <Icone de l'onglet -->
+    <link rel="shortcut icon" href="logo-html.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Journal intime de Falko</h1>
+      <p>interdit de lire</p>
+    </header>
+
+    <section>
+      <div>
+        <h2>Mon meilleur ami</h2>
+        <img src="oie_hayden.png" height="200" alt="Image d'une oie verte" />
+      </div>
+
+      <div>
+        <h3>Qualité :</h3>
+        <ul>
+          <li>gros bg</li>
+        </ul>
+
+        <h3>Défauts :</h3>
+        <ol>
+          <li>Très tétu</li>
+        </ol>
+      </div>
+
+      <div>
+        <h2>Tableaux</h2>
+        <table border="1" width="50%">
+          <!-- Légende -->
+          <caption>
+            Pupulations d'europe
+          </caption>
+          <!-- En-tete -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Espagne</td>
+              <td>40M</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Allemagne</td>
+              <td>80M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h5><span>&#8456;</span> H5 :</h5>
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat Sheet</a
+        >
+        <br />
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >HTML ARROWS</a
+        >
+      </div>
+    </section>
+    <br />
+    <!-- Formulaire -->
+    <section>
+      <h2>Formulaire</h2>
+      <form action="/action.php" method="post">
+
+        <!-- Nom -->
+        <label for="name">Nom </label>
+        <input id="name" type="text" placeholder="Entrez votre nom" /><br><br>
+        <!-- Age -->
+        <label for="age">Age</label>
+        <input id="age" type="number" min="0" max="99" step="1" value="18" placeholder="Entrez votre age"><br><br>
+        <!-- Genre -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option selected value="homme">Homme</option>
+          <option value="femme">Femme</option>
+          <option value="non-binaire">Non-Binaire</option>
+          <option value="LGBTQ2S+">LGBTQ2S+</option>
+        </select><br><br>
+
+        <!-- Input Radio -->
+
+        <div>
+          <input type="radio" checked name="type" id="human">
+          <label for="human">Humain</label>
+
+          <input type="radio" name="type" id="dog">
+          <label for="dog">Chien</label>
+
+          <input type="radio" name="type" id="cat">
+          <label for="cat">Chat</label>
+        </div><br>
+
+        <textarea cols="30" rows="10" placeholder="Entrez votre demande" ></textarea><br><br>
+
+        <!-- Input Checkbox -->
+
+        <label><input type="checkbox" />Cochez pour validé</label><br><br>
+
+        <input type="submit" value="Valider">
+
+      </form>
+    </section>
+    <br>
+    <!-- Mail et envoie de fichier -->
+    <footer>
+      <a href="mailto:fs@gmail.com">Ecrivez-moi</a>
+      <br>
+      <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
+ 
